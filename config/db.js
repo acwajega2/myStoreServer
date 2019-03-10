@@ -1,9 +1,9 @@
 module.exports = {
     'connection_parameters' : {
-  host: '127.0.0.1',
-  user: 'root',	
-  password: 'matilda',
+  host: 'sql12.freemysqlhosting.net',
+  user: 'sql12282631',	
+  password: 'gVWbew8AJJ',
   
-  database: 'tshirtshop_db'}
+  database: 'sql12282631'}
 
 };
