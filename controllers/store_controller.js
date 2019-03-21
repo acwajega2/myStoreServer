@@ -12,7 +12,7 @@ var url = require('url');
 
 //-------------------------------GETTING ALL ITEMS----------------------------------
 module.exports.GetItems = function(req,res){
-	qry_action.query('SELECT A.name,A.description,A.price,A.image,C.category_id,D.department_id,C.name as "category",D.name as "department" FROM product A '+
+	qry_action.query('SELECT A.product_id,A.name,A.description,A.price,A.image,C.category_id,D.department_id,C.name as "category",D.name as "department" FROM product A '+
 'join product_category B on A.product_id = B.product_id '+
  'join category C on B.category_id = C.category_id join department D on C.department_id = D.department_id '
 ,[],function(err,results){
